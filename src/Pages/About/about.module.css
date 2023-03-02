@@ -1,0 +1,52 @@
+.container{
+    box-sizing: border-box;
+    margin:0;
+    height:100vh;
+    justify-content: space-evenly;
+   
+        
+}
+.innercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width:100vh;
+    height:402px;
+    background-size: contain;
+    margin:50%;
+    border:1px  lightslategray;
+    box-shadow: 0px 0px 15px -2px gray;
+    margin-bottom:40px;
+    background-color: aqua;
+    background-color: rgba(244, 234, 234, 0.1);
+    color:black;
+    font-weight: 500;
+  
+}
+.prof{
+    height:400px;
+    
+    
+}
+.aboutcontaier{
+    padding: 50px;
+    
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:50px;
+    width:100vh;
+    margin-left: 40%;
+    margin-right: 50%;
+    
+}
+.tools{
+    transition:.5s;
+}
+.tools:hover{
+    transform:scale(5);
+}

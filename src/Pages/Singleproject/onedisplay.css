@@ -1,0 +1,16 @@
+.image{
+    height:300px;
+    width:350px;
+}
+
+.image:hover + .tools{
+    display:block;
+}
+
+.tools{
+    display:none;
+}
+
+.arrowbtn{
+    background-color: transparent;
+}

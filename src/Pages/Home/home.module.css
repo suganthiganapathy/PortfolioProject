@@ -1,0 +1,27 @@
+.container{
+    
+    color:black;
+    position: static;
+    margin-top: 40vh;
+    margin-left: 15vw;
+    text-align:start;
+    box-sizing: border-box;
+    
+    
+}
+.firstname{
+   font-weight: bold;
+   font-size:10vh;
+   font-size: 5vw;
+}
+.lastname{
+ font-weight: normal;
+ font-size:10vh;
+   font-size: 5vw;
+
+ margin-left: 1.2vw;
+}
+.develop{
+font-weight: initial;
+margin-left: 2.5vw;
+}
