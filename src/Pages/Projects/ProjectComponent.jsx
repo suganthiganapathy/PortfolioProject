@@ -10,7 +10,7 @@ import {
 import { TbBrandCss3 } from "react-icons/tb";
 import { MdWebAsset } from "react-icons/md";
 
-function ProjectsPage() {
+function ProjectsPage(props) {
   const [isExpand, setIsExpand] = useState(false);
 
   function handleClick() {
@@ -23,7 +23,7 @@ function ProjectsPage() {
   return (
     <div className={projects.container}>
       <div className={projects.outercontainer}>
-        <p className={projects.title}>Solarsystem</p>
+        <p className={projects.title}>{props.title}</p>
         <img className={projects.imagecontainer} src={image}></img>
         <div className={projects.projecticon}>
           <p className={projects.icons}>
@@ -36,8 +36,7 @@ function ProjectsPage() {
           </p>
           {isExpand && (
             <p>
-              This is my first group project. I got a chance to create a contact
-              page.
+             {props.description}
             </p>
           )}
           <button onClick={githubClick} className={projects.github}>
