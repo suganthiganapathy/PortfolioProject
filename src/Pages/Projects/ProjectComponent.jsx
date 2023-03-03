@@ -1,44 +1,51 @@
 import React from "react";
-import { AiOutlineArrowDown, AiFillGithub } from "react-icons/ai";
-import calculator from "../../Images/calculator.png";
+import { useState } from "react";
+import image from "./calculator.png";
 import projects from "./projects.module.css";
-function Projectcomponent(props) {
-  return (
-    <div className={projects.outercontainer}>
-      <div className={projects.innercontainer}>
-        <img src={calculator} className={projects.image}></img>
-        <p className={projects.title}>{props.name}</p>
-        <div className={projects.describe}>
-          <p>{props.description}</p>
+import {
+  AiOutlineHtml5,
+  AiOutlineArrowDown,
+  AiFillGithub,
+} from "react-icons/ai";
+import { TbBrandCss3 } from "react-icons/tb";
+import { MdWebAsset } from "react-icons/md";
 
-          <div className={projects.icons}>
-            <button
-              className={projects.github}
-              onClick={() =>
-                window.open(
-                  "https://github.com/suganthiganapathy/SinglePageApplication",
-                  "_blank"
-                )
-              }
-            >
+function ProjectsPage() {
+  const [isExpand, setIsExpand] = useState(false);
+
+  function handleClick() {
+    setIsExpand(!isExpand);
+  }
+
+  function githubClick() {
+    return window.open("https://github.com/H3X-C0DE/The-Dark-Galaxy");
+  }
+  return (
+    <div className={projects.container}>
+      <div className={projects.outercontainer}>
+        <p className={projects.title}>Solarsystem</p>
+        <img className={projects.imagecontainer} src={image}></img>
+        <div className={projects.projecticon}>
+          <p className={projects.icons}>
+            Languages used in this project
+            <br />
+            <AiOutlineHtml5 /> <TbBrandCss3 />
+            <button className={projects.arrowbtn} onClick={handleClick}>
               <AiOutlineArrowDown />
             </button>
-            <button
-              className={projects.webpage}
-              onClick={() =>
-                window.open(
-                  "https://github.com/suganthiganapathy/SinglePageApplication",
-                  "_blank"
-                )
-              }
-            >
-              <AiFillGithub />
-            </button>
-          </div>
+          </p>
+          {isExpand && (
+            <p>
+              This is my first group project. I got a chance to create a contact
+              page.
+            </p>
+          )}
+          <button onClick={githubClick} className={projects.github}>
+            <AiFillGithub />
+          </button>
         </div>
       </div>
     </div>
   );
 }
-
-export default Projectcomponent;
+export default ProjectsPage;
