@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import image from "./calculator.png";
+//import image from "./calculator.png";
 import projects from "./projects.module.css";
 import {
   AiOutlineHtml5,
@@ -24,7 +24,7 @@ function ProjectsPage(props) {
     <div className={projects.container}>
       <div className={projects.outercontainer}>
         <p className={projects.title}>{props.title}</p>
-        <img className={projects.imagecontainer} src={image}></img>
+        <img className={projects.imagecontainer} src={props.image}></img>
         <div className={projects.projecticon}>
           <p className={projects.icons}>
             Languages used in this project

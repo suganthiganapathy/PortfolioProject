@@ -6,6 +6,7 @@
     margin-left: 15vw;
     text-align:start;
     box-sizing: border-box;
+    height:100vh;
     
     
 }
@@ -17,7 +18,7 @@
 .lastname{
  font-weight: normal;
  font-size:10vh;
-   font-size: 5vw;
+ font-size: 5vw;
 
  margin-left: 1.2vw;
 }
