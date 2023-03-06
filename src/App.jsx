@@ -7,12 +7,12 @@ import Projects from "./Pages/Projects/Projects";
 // import OnepageDisplay from "./Pages/Singleproject/Onedisplay";
 function App() {
   return (
-    <>
+    <div className="container">
       <Navbar />
       <Homepage />
       <AboutPage />
        <Projects />
-       </>
+       </div>
   );
 }
 

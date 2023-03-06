@@ -12,6 +12,7 @@ function Navbar() {
                 <li><a href="/" className={navbarstyle.anchor}>Home</a></li>
                 <li><a href="#aboutpage" className={navbarstyle.anchor}>About Me</a></li>
                 <li><a href="#projectspage" className={navbarstyle.anchor}>Projects</a></li>
+                {/* <li><a href="#contactpage" className={navbarstyle.anchor}>Contact</a></li> */}
               </ul>
          </nav>
       </div>

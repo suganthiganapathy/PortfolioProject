@@ -1,6 +1,6 @@
 import React from "react";
 import about from "./about.module.css";
-import Profile from "../../Images/prof.jpg";
+import Profile from "../../Images/prof.png";
 import html from "../../Images/html.png"
 import css from "../../Images/css.png"
 import javascript from "../../Images/js.png"
@@ -11,10 +11,8 @@ function AboutPage() {
     <div className={about.container} id="aboutpage">
       
       <div className={about.innercontainer}>
-        <div className={about.image}>
-          <img src={Profile} className={about.prof}/>
-        </div>
-        <section className={about.aboutcontaier}>
+      
+        <div className={about.aboutcontaier}>
           <p>
             I am 34 years old, studying frontend development in order to get IT
             releated Job. I like coding which is a creative work and it gives
@@ -28,7 +26,13 @@ function AboutPage() {
             in large groups which help to grow my learning skills. I always like
             to do new things
           </p>
-         </section>
+          
+       
+         </div>
+
+         <div className={about.image}>
+          <img src={Profile} className={about.prof}/>
+        </div>
         
         </div>
         <section className={about.skills}>

@@ -2,27 +2,27 @@
     
     color:black;
     position: static;
-    margin-top: 40vh;
-    margin-left: 15vw;
     text-align:start;
     box-sizing: border-box;
     height:100vh;
-    
+    width:100%;
+    margin-top: 40vh;
     
 }
+
 .firstname{
    font-weight: bold;
    font-size:10vh;
    font-size: 5vw;
+   margin-left: 15vw;
 }
 .lastname{
  font-weight: normal;
  font-size:10vh;
  font-size: 5vw;
-
- margin-left: 1.2vw;
+ margin-left: 19vw;
 }
 .develop{
 font-weight: initial;
-margin-left: 2.5vw;
+margin-left: 21.5vw;
 }
