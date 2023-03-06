@@ -17,6 +17,9 @@ function ProjectsPage(props) {
     setIsExpand(!isExpand);
   }
 
+  function webpageClick(){
+    return window.open("https://suganthiganapathy.github.io/calculator-project/")
+  }
   function githubClick() {
     return window.open("https://github.com/H3X-C0DE/The-Dark-Galaxy");
   }
@@ -28,20 +31,24 @@ function ProjectsPage(props) {
         <div className={projects.projecticon}>
           <p className={projects.icons}>
             Languages used in this project
-            <br />
-            <AiOutlineHtml5 /> <TbBrandCss3 />
+            <br /><br/></p>
+           <p className={projects.smallicons}> <AiOutlineHtml5 /> <TbBrandCss3 /></p>
             <button className={projects.arrowbtn} onClick={handleClick}>
               <AiOutlineArrowDown />
             </button>
-          </p>
+          
           {isExpand && (
-            <p>
+            <p className={projects.description}>
              {props.description}
             </p>
           )}
+          <div className="butttons" style={{display:"flex", flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
           <button onClick={githubClick} className={projects.github}>
             <AiFillGithub />
           </button>
+
+          <button onClick={webpageClick} className={projects.webpage}>< MdWebAsset/></button>
+          </div>
         </div>
       </div>
     </div>

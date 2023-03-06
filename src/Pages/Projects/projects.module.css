@@ -5,17 +5,19 @@
 }
 .container{
  min-height: 100vh;
-  min-width: 400px;
-  margin:0;
-  position:static;
+ width:100vw;
+ display:flex;
+ justify-content: space-evenly; 
+ align-items: center;
+ width:50%;
   
 }
 
 .outercontainer{
-  height:230px;
+  height:290px;
   width: 350px;
-  margin:0;
- position:absolute;
+  
+  position:absolute;
 } 
 .imagecontainer{
   height:250px;
@@ -25,20 +27,28 @@
   
 
 }
+.description{
+  font-size: 20px;
+  margin-top: 25px;
+}
 .projecticon{
   position:absolute;
   top:0;
   
   left:0;
-  right:0;
+  
   visibility: hidden;
   opacity:0;
-   height:270px;
+   height:296px;
   width:100%;
   font-weight: 200px;
-  margin-top:30px;
+  font-size: 18px;
+  
 }
 
+.smallicons{
+  font-size: 25px;
+}
 .container:hover .projecticon{
   visibility: visible;
   opacity: 1;
@@ -47,10 +57,9 @@
   color:white;
   }  
 
-  .github{
-      position: absolute;
-      left:50%;
-
-      bottom: 51px;
-      
+  .github,.webpage{
+    margin:10px;
+    background-color: transparent;
+    color:white;
+    
   }
