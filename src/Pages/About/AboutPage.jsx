@@ -9,7 +9,7 @@ import reactjs from "../../Images/react.png"
 function AboutPage() {
   return (
     <div className={about.container} id="aboutpage">
-      
+          
       <div className={about.innercontainer}>
       
         <div className={about.aboutcontaier}>
@@ -33,15 +33,17 @@ function AboutPage() {
          <div className={about.image}>
           <img src={Profile} className={about.prof}/>
         </div>
-        
         </div>
+    
+        
         <section className={about.skills}>
-              <img src={html} className={about.tools} ></img>
-              <img src={css} className={about.tools} ></img>
-              <img src={javascript} className={about.tools}></img>
-              <img src={reactjs} className={about.tools} ></img>
+              <img src={html} className={about.tools}/> 
+               <img src={css} className={about.tools} />
+              <img src={javascript} className={about.tools}/>
+              <img src={reactjs} className={about.tools}/>
          </section>
-    </div>
+         
+         </div>
     
   );
 }

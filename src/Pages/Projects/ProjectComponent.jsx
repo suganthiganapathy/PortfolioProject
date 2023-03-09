@@ -47,9 +47,9 @@ function ProjectsPage(props) {
           </div>
         
         <div className="butttons" style={{display:"flex", flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-          <a href={props.github}><AiFillGithub/></a>
-          <a href={props.weblink}><MdWebAsset/></a>
-          </div>
+          <a href={props.github} target="_blank"><AiFillGithub/></a>
+          <a href={props.weblink} target="_blank"><MdWebAsset/></a>
+        </div>
       </div>
     </div>
   );

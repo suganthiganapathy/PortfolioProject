@@ -15,7 +15,8 @@ function Projects(){
       description='I got this project while i was Learning Html and Css. Here I used Parallex effect to show some south-Indian touriest sports and historical Places.'
       image={Parallax}
       Languages='HTML & CSS'
-      github=''
+      github='https://github.com/suganthiganapathy/parallaxtask'
+      weblink='https://sweet-scone-3c4697.netlify.app/'
       />
            
       <ProjectsPage className="projects" style={{width: '50%'}}
@@ -23,6 +24,8 @@ function Projects(){
       description = ' This is my first group project. I created a contact page. In this project I used github to share the code with the group members. '
       image={Darkgalaxy} 
       Languages='HTML & CSS'
+      github='https://github.com/suganthiganapathy/Solar-System'
+      weblink='https://splendid-cat-fd3380.netlify.app/'
       />
       
       <ProjectsPage className="projects" style={{width: '50%'}}
@@ -30,6 +33,7 @@ function Projects(){
       description='I  have done this task while learning Javascript. It was very intresting while connecting the keybord event to the Audio.' image={drumkit}
       Languages='HTMl,CSS & Javascript'
       github='https://github.com/suganthiganapathy/drumkit'
+      weblink='https://eloquent-pothos-6e22fe.netlify.app/'
       />
       
       <ProjectsPage className="projects" style={{width: '50%'}}
@@ -37,6 +41,8 @@ function Projects(){
       description='I got this project during christmas. In this projects I used local storage to store and displayed the data.'
       image={christmas} 
       Languages='HTMl,CSS & Javascript'
+      github='https://github.com/suganthiganapathy/christmasProject'
+      weblink='https://lovely-meringue-80e476.netlify.app'
       />
 
       
