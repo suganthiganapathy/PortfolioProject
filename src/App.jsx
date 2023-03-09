@@ -4,6 +4,7 @@ import "./App.css";
 import Homepage from "./Pages/Home/HomePage";
 import AboutPage from "./Pages/About/AboutPage";
 import Projects from "./Pages/Projects/Projects";
+import Footer from "./Components/Footer/Footer";
 // import OnepageDisplay from "./Pages/Singleproject/Onedisplay";
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <Navbar />
       <Homepage />
       <AboutPage />
-       <Projects />
-       </div>
+      <Projects />
+      <Footer/>
+    </div>
   );
 }
 

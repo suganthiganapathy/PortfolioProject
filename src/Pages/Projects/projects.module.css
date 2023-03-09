@@ -1,8 +1,3 @@
-*{
-  margin:0;
-  padding: 0;
-  border:0;
-}
 .container{
  min-height: 100vh;
  width:100vw;
@@ -14,18 +9,29 @@
 }
 
 .outercontainer{
-  height:290px;
-  width: 350px;
-  
+  height:320px;
+  width: 420px;
+  margin-bottom: 10px;
   position:absolute;
-} 
+  background-color: rgb(124, 127, 126);
+}
+
+.title{
+  
+  font-size: 30px;
+}
 .imagecontainer{
   height:250px;
   width:350px;
-  margin-top:28px;
-  transition: opacity .2s, visibility .2s;
   
+  transition: opacity .2s, visibility .2s;
 
+}
+
+.arrowbtn{
+  background-color: transparent;
+
+  color:aliceblue;
 }
 .description{
   font-size: 20px;
@@ -33,14 +39,12 @@
 }
 .projecticon{
   position:absolute;
-  top:0;
-  
-  left:0;
-  
+  top:35px;
+  left:35px;
   visibility: hidden;
   opacity:0;
-   height:296px;
-  width:100%;
+  height:250px;
+  width:85%;
   font-weight: 200px;
   font-size: 18px;
   
@@ -55,11 +59,9 @@
   background-image:linear-gradient(black,gray,black);
   text-align: center;
   color:white;
+  transition: .7s;
   }  
 
-  .github,.webpage{
-    margin:10px;
-    background-color: transparent;
-    color:white;
-    
+  a{
+    color:black;
   }
